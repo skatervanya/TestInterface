@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class Lock : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private bool _isLocked = true;
 
-    // Update is called once per frame
-    void Update()
+    public bool Unlock()
     {
-        
+        _isLocked = !_isLocked;
+
+        return _isLocked;
     }
 }
