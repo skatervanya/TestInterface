@@ -1,13 +1,9 @@
-using UnityEngine;
-
-public class Lock : MonoBehaviour
+public class Lock
 {
-    private bool _isLocked = true;
+    public bool IsLocked { get; private set; } = true;
 
-    public bool Unlock()
+    public void Unlock()
     {
-        _isLocked = !_isLocked;
-
-        return _isLocked;
+        IsLocked = false;
     }
 }
