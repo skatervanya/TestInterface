@@ -1,8 +1,11 @@
 using UnityEngine;
 
-public interface IInteractable
+public class IInteractable 
 {
-    string Name { get; }
-    
-    void Interact();
+    string Name {get;}
+
+    public void Interact()
+    {
+        
+    }
 }
