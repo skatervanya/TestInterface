@@ -22,7 +22,7 @@ public class Chest : IInteractable
         else
         {
             _wallet.AddCoins(_coins);
-            Debug.Log($"We found {_coins} coins");
+            Debug.Log($"We found {_wallet.Coins} coins ");
             _coins = 0;
         }
     }
